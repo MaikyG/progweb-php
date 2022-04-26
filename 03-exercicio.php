@@ -9,9 +9,9 @@
 <body>
     <?php
     //variaveis
-    $data = "26/04/2022";
+    $data = date("d/m/Y");
     $nome = "Maiky";
-    $idade = 18;
+    $idade = date("Y") - 2003;
     $cidade = "São Paulo";
 
     echo "<p> hoje é $data. $nome tem $idade anos e mora em $cidade  </p>";
