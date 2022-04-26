@@ -18,6 +18,8 @@
 
      ?>
 
+     <p> hoje é <?=$data?>. <?=$nome?> tem <?=$idade?> anos e mora em <?=$cidade?> </p>
+
      
 </body>
 </html>
