@@ -40,6 +40,17 @@ $cursos = array("HTML5", "React", "Node.js", "PHP");
         o curso de <?=$curso["nome"]?> tem <?=$curso["carga_horaria"]?> horas
     </p>
 
+    <hr>
+    
+    <h2>função de debug/depuração</h2>
+
+    <pre>
+    <?=print_r($cursos)?>
+    </pre>
+
+    <pre>
+        <?=var_dump($cursos)?>
+    </pre>
 
 
 
