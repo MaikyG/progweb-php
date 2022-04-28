@@ -11,7 +11,7 @@
 
     <h2>encadeada</h2>
     <?php
-    $salario = 400;
+    $salario  = 989 ;
     
     if ($salario < 500) {
         $salarioNovo = $salario * 1.15;
@@ -21,8 +21,13 @@
         $salarioNovo = $salario * 1.05;
 
     }
-     echo "<p> $salarioNovo</p>"
+
+    $salarioNovo = number_format($salarioNovo ,2, ",",".");
+    
+     
     ?>
+
+    <h2><?=$salario?> e <?=$salarioNovo?> </h2>
     
 </body>
 </html>
