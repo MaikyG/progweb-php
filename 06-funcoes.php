@@ -58,7 +58,7 @@ $desconto = 75.4789;
 $salarioMinimo = 1212;
 $novoSalario = 2500.47; 
 
-function forma(float $var, float $casasDecimais=2):float{
+function forma(float $var, int $casasDecimais=2):float{
 
 return "R$:".number_format( $var, $casasDecimais , "," , ".");
 
