@@ -47,15 +47,43 @@ for ($i=1; $i <4 ; $i++) {
     <h1>exercicio</h1>
 <?php
 $meses = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro" , "dezembro",];
-
-for ($i=0; $meses < 13 ; $i++) { 
+?>
+    <ol>
+<?php
+for ($m = 0; $m < count($meses); $m++){
+?>
+    <li><?=$meses[$m]?></li>
+<?php
+};
 ?>
 
-<ol><?=$meses?></ol>
+</ol>
+
+    <h2>foreach (para cada)</h2>
+    <p>Loop exclusivo para Arrays</p>
+<ol>
+    <?php foreach($meses as $mes){?>
+        <li> <?=$mes?> </li>
+    <?php }; ?>
+</ol>
+
+<?php
+$curso = [
+    "nome" => "Progrmador Web",
+    "carga_horaria" => 240,
+    "unidade" => "Penha",
+    "ucs" => 5
+];
+
+foreach($curso as $key => $value){
+?>
+
+<p><?=$key?> - <?=$value?></p>
 
 <?php
 }
 ?>
+
 
     
 </body>
