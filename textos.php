@@ -1,0 +1,4 @@
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati at minus ad illo nam, autem magnam totam animi, labore modi? Eveniet earum harum illo, error voluptatibus repudiandae! Vitae, dolore.</p>>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit porro tempora expedita minima, ut repellendus pariatur exercitationem, asperiores repudiandae neque aliquam laborum ratione cum ea repellat. Illo, ratione placeat! Cum cumque exercitationem debitis! Iusto possimus animi doloribus nobis aperiam? Delectus blanditiis officia harum nisi odio esse neque fugiat! Pariatur, est?</p>
+
+ <?php require "lista.html"?>
