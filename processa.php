@@ -9,7 +9,18 @@
 <body>
     <h1>processamento de dados</h1>
     <hr>
+
 <?php
+if (empty($_POST["nome"]) || empty($_POST["email"])) {
+?>
+    <p style="color: red "> preencha os campos </p>
+    <p><a href="08-formulario.html">voltar</a></p>
+
+ <?php
+} else {
+    # code...
+
+
     //Capturando os dados enviados a partir do formulario
  /* echo "<pre>";
     var_dump($_POST);
@@ -42,11 +53,11 @@
                  <?php }; ?>
             </ul>
         </li>
-         <?php } ?>
+         <?php }; ?>
         <li>Informativos: <?=$informativos?></li>
         <li>Mensagem: <?=$mensagem?></li>
       
     </ul>
-    
+ <?php }; ?>
 </body>
 </html>
