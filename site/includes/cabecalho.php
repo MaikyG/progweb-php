@@ -1,6 +1,9 @@
  <?php
+ /* 
+ $_SERVER['PHP_SELF'] -> traz os dados completos do endereço basename($_SERVER['PHP_SELF']) -> extrai apenas o nome.extensão */
 $pagina = basename($_SERVER['PHP_SELF']);
 
+/* parte 2: Condicional para avaliar qual pagina esta aberta e definir qual titulo usar */
 switch ($pagina) {
     case 'index.php': $titulo = "Pagina Inicial";break;
     case 'produtos.php': $titulo = "Produtos";break;
