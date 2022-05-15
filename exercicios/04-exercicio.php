@@ -51,6 +51,5 @@ $fabricantes = array ("Ferrari","Mercedes","Alpine","Honda")
 
         <button type="submit" name="enviar">Enviar dados</button>
     </form>
-    
 </body>
 </html>
