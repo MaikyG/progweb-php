@@ -7,11 +7,17 @@
     <title>04 exercicio</title>
 </head>
 <body>
-    <form action="">
+    <form action="resultado.php" method="post">
         <div>
+
         <p>
-            <label for="nome">nome</label><br>
-            <input type="text" name="nome" id="name">
+<?php 
+//sanitize
+//$nome = filter_input(INPUT_POST,"nome" , FILTER_SANITIZE_SPECIAL_CHARS);
+?>
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome">
+
         </p>
         </div>
 
@@ -21,14 +27,14 @@ $fabricantes = array ("Ferrari","Mercedes","Alpine","Honda")
 ?>
             <p>Fabricantes!!!</p>
                 <select name="fabricante" id="fabricante">
-<?php foreach ($fabricantes as $fab){ ?>
-                <option value=""><?=$fab?></option>
+<?php foreach ($fabricantes as $fabricante){ ?>
+                <option value="<?=$fabricante?>"><?=$fabricante?></option>
 <?php }; ?>
-
-                </select>
+                </select>   
         </div>
 
         <div>
+
             <label for="preco">Preço</label><br>
             <input type="number" name="preco" id="preco" min="100" max="10000">
         </div>
